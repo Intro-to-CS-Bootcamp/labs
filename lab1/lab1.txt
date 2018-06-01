@@ -1,0 +1,69 @@
+file start
+
+chapter 2: numbers
+
+exact
+8
+>> 3 + 5
+
+exact
+70
+>> (3 + 8 / 2) * 10
+
+exact
+3
+>> 11/3
+
+exact
+12
+>> puts 2**3 + 4
+
+multiple
+A
+What does 'puts' do exactly?
+A. Displays a value in the interpreter and do nothing else
+B. Displays a value in the interpreter and returns the value
+C. Returns a value
+
+multiple
+C
+>> puts puts 1+2
+A. 3
+B. nil
+C. 3
+   nil
+
+chapter end
+
+chapter 3: letters
+
+exact
+Gooddaytoday
+>> puts 'Good' + 'day' + 'today'
+
+exact
+3333
+>> puts '3' * 4
+
+multiple
+A
+>> puts 'DeNero\\'s dog types.'
+A. DeNero's dog types.
+B. DeNero\\'s dog types.
+C. Error
+
+multiple
+C
+>> puts 'DeNero\\\\'s dog types.'
+A. DeNero\\'s dog types.
+B. DeNero\\\\’s dog types.
+C. Error
+
+multiple
+A
+>> puts 'DeNero\\\\\\'s dog types.'
+A. DeNero\\'s dog types.
+B. DeNero\\\\’s dog types.
+C. Error
+
+chapter end
