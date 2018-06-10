@@ -20,19 +20,20 @@ def expect_exact(answer, correct_msg='OK!')
 	puts correct_msg
 end
 
+puts ''
 puts 'For each of the following questions, type the output
 displayed by the interactive Ruby interpreter when the
 expression is evaluated.'
 puts 'Type Error if you think there is an error.'
 puts 'For multiple choice, type the answer you think is correct.'
+puts 'If the answer has multiple lines, separate each output with a SEMICOLON (and a space)' 
 puts 'If you get stuck, try out in the interpreter.'
 puts 'Type OK to continue.'
 expect('ok', '')
 puts ''
 
-Dir.chdir(ARGV[0])
-File.open(ARGV[0] + ".json", "r") do |f|
-	progress_file = "." + ARGV[0] + "_progress.txt"
+File.open(ARGV[0], "r") do |f|
+	progress_file = ARGV[0][0, ARGV[0].length - 5] + "_progress.txt"
 	progress = File.exist?(progress_file) ? File.read(progress_file).chomp.to_i : 0
 	offset = chapter_index = 0
 
@@ -55,7 +56,7 @@ File.open(ARGV[0] + ".json", "r") do |f|
 			if (chapter_index + offset) <= progress
 				puts question['answer']
 			else
-				question['type'] == 'exact' ? expect_exact(question['answer']) : expect(question['answer'])
+				question["exact"] ? expect_exact(question['answer']) : expect(question['answer'])
 				progress += 1
 			end
 			puts ''
