@@ -1,8 +1,6 @@
 require 'json'
 
-Dir.chdir(ARGV[0])
-puts Dir.pwd
-IO.readlines(ARGV[0] + ".txt").each do |line|
+IO.readlines(ARGV[0]).each do |line|
   line == "\n" ? next : line.chomp!
 
   if line == "file start"
@@ -17,12 +15,12 @@ IO.readlines(ARGV[0] + ".txt").each do |line|
     @jarray.push(@chapter)
     @chapter = {}
   else
-    if line == "exact" || line == "multiple"
+    if line == "true" || line == "false"
       if !@q.empty?
         @chapter["questions"].push(@q)
         @q = {}
       end
-      @q["type"] = line
+      @q["exact"] = line == "true"
     elsif @q.length == 1
       @q["answer"] = line
       @q["question"] = []
@@ -32,6 +30,7 @@ IO.readlines(ARGV[0] + ".txt").each do |line|
   end
 end
 
-File.open(ARGV[0] + ".json", "w") do |f|
+
+File.open(ARGV[0][0, ARGV[0].length - 4] + ".json", "w") do |f|
   f.write(@jarray.to_json)
 end
