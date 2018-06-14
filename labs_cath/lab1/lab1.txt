@@ -95,7 +95,7 @@ C. nil
 D. roses and violets 	
 
 false
-6; 3
+[6, 3]
 >> iphone = 2
 >> iphone, watch = iphone + 4, iphone + 1
 >> puts iphone, watch
