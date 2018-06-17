@@ -83,11 +83,11 @@ chapter 4: variables & assignment
 >> a * b + 5
 
 exact
-cs61a hellooo; nil
+“cs61a hellooo”
 >> you = 'cs61a'
 >> say = 'hellooo'
 >> hello = say
->> puts you + ' ' + say
+>> you + ' ' + hello
 
 !exact
 C
@@ -126,7 +126,7 @@ Error
 >> year + name
 
 !exact
-101.6
+“101.6”
 >> 10.to_s + '1.6'
 
 !exact
@@ -134,8 +134,8 @@ Error
 >> 10 + '1.6'.to_i
 
 exact
-There're 525949 minutes in a year; nil
->> puts 'There\'re ' + 525949.2.to_i.to_s + ' minutes in a year'
+“There are 525949 minutes in a year”
+>> 'There\'re ' + 525949.2.to_i.to_s + ' minutes in a year'
 
 exact
 answer = gets.chomp
