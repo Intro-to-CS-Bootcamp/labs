@@ -26,6 +26,13 @@ B. Displays a value in the interpreter and returns the value
 C. Returns a value
 
 !exact
+B
+>> puts 3
+A. 3
+B. 3; nil
+C. nil
+
+!exact
 C
 >> puts puts 1+2
 A. 3
@@ -54,8 +61,8 @@ C. Error
 !exact
 C
 >> puts 'DeNero\\'s dog types'
-A. DeNero's dog types, nil
-B. DeNero\\’s dog types, nil
+A. DeNero's dog types; nil
+B. DeNero\\’s dog types; nil
 C. Error
 
 !exact
@@ -89,9 +96,10 @@ C
 >> rhyming = puts roses + ' and ' + violets
 >> puts rhyming
 A. Error		
-B. red and blue
-C. nil	   
-D. roses and violets 	
+B. red and blue; nil
+C. nil; nil   
+D. roses and violets; nil
+E. nil 	
 
 !exact
 6; 3; nil
@@ -127,7 +135,7 @@ Error
 
 exact
 There're 525949 minutes in a year; nil
->> puts 'There\'re ' + 525949.2.to_i.to_s + ' minutes in a year.'
+>> puts 'There\'re ' + 525949.2.to_i.to_s + ' minutes in a year'
 
 exact
 answer = gets.chomp
