@@ -1,0 +1,210 @@
+file start
+
+CHAPTER 6: MORE ABOUT METHODS
+
+exact
+"CAPITALIZE"
+>> 'Capitalize'.upcase
+
+!exact
+2
+>> 55 / 5 % 3
+
+!exact
+10
+>> 10 % 12
+
+!exact
+2024
+>> 'It is '.length + 2018
+
+!exact
+0
+>> rand(6)/ 6
+
+exact
+welcome to cal, smarter-than-stanfords; nil
+>> str = 'sdrofnats-naht-retrams'
+>> rts = ', ' + str.reverse
+>> rts = 'welcome to cal' + rts
+>> puts rts
+
+chapter end
+
+CHAPTER 7: FLOW CONTROL
+
+!exact
+true
+>> 'big' < 'small'
+
+!exact
+error
+>> 50 / 5 > '10' 
+
+!exact
+false
+>> '5' < '20' 
+
+!exact
+false
+>> 5 % 2 == 2 || 2**3 == 6
+
+!exact
+true
+>> 5 / 2 == 4 / 2 && 2 > 1
+
+!exact
+true
+>> 'a' < 'A' || 5 < 20 && 4.6.to_i == 4
+
+!exact
+"1"
+>> 2 > 1 && '1'
+
+exact
+ha; nil
+>> 1 && (puts 'ha')
+
+!exact
+error
+>> 1**3 < 2 && 1 / 0 == 0 && 4 < 5
+
+exact
+hello; nil
+>> if (puts 'hello')
+>>    puts 'world'
+>> end
+
+exact
+I love cs!; nil
+>> if rand(1) < 1
+>>     puts 'I love cs!'
+>> else
+>>     puts 'I hate cs!'
+>> end
+
+!exact
+2; 1; 0; nil
+>> n = 2
+>> while n > -1 
+>>     puts n
+>>     n = n - 1
+>> end
+
+exact
+"Too many cats! People are greater than or equal to dogs."
+>> people, cats, dogs = 20, 30, 15
+>> string = ""
+>> if people < cats
+>>  	string += "Too many cats! "
+>> end
+>> if people > cats
+>> 		string += "Not many cats! "
+>> end
+>> if people < dogs
+>> 		string += "The world is drooled on! "
+>> end
+>> dogs += 5
+>> if people >= dogs
+>>  	string += "People are greater than or equal to dogs."
+>> end
+>> string
+
+
+chapter end
+
+CHAPTER 8: Arrays and Iterators
+
+!exact
+C
+>> array = ['Richard', 'Jared', 'Gilfoyle', 'Dinesh']
+>> puts array[3] + ' is friends with ' + array[4]
+A. Gilfoyle is friends with Dinesh
+B. Dinesh is friends with nil
+C. Error
+
+!exact
+error
+>> array[4] = ['Pied Piper']
+>> puts array[0] + ' is the founder of ' + array[4]
+
+exact
+Richard is the founder of Pied Piper; nil
+>> puts array[0] + ' is the founder of ' + array[4][0]
+
+!exact
+4
+>> top_public_schools = [['UCB'], ['UCLA'], ['UofV']]
+>> ranking = 1
+>> top_public_schools.each do |school|
+>>	school.push ranking
+>> 	ranking = ranking + 1
+>> end
+>> ranking
+
+exact
+UCB is always the ONE AND ONLY number 1 public school; nil
+>> puts top_public_schools[0][0] + ' is always the ONE AND ONLY number ' + top_public_schools[0][1].to_s + ' public school'
+
+!exact
+[[3, 4, false], [666]]
+>> fido, molly = 3, 4
+>> duke = false
+>> doggos = [fido, molly, duke]
+>> lucifer = 666
+>> cats = [lucifer]
+>> years = doggos[0] + doggos[1]
+>> if years == 7
+>>	 if not duke
+>>		pets = [doggos, cats]
+>>	end
+>> end
+>> pets
+
+exact
+xooooxoo; nil
+>> x, o = 'x', 'o'
+>> string = ""
+>> grid = [ [x, o, o, o],
+>>			[o, x, o, o] ]
+>> grid.each do | row |
+>>	row.each do | col |
+>>		string += col
+>>	end
+>> end
+>> puts string
+
+exact
+"CAL"
+>> veggies = ["Carrots", "Alfalfa", "Lettuce", "Onions", "Potatoes"]
+>> secretWord = ""
+>> veggies.each do |veg|
+>>	if veg.length == 7
+>>	 	secretWord += veg[0]
+>>	end
+>> end
+>> secretWord
+
+exact 
+"The struggle is real, Go bears!"
+>> count = 3
+>> berkeley = []
+>> count.times do
+>>  if count < 10
+>> 		berkeley = []
+>> 		count += 1
+>> 	end
+>> 	berkeley.push "Go bears!"
+>> end
+>> if count < 10
+>>  	berkeley.push "elggurts ehT"
+>>  	berkeley.push true
+>> end
+>> if berkeley.pop
+>> 	berkeley.push "is real"
+>> end
+>> cal = [berkeley[1].reverse]
+>> cal.push berkeley.pop
+>> puts cal.join(" ") + ', ' + berkeley[0]
+
+chapter end
