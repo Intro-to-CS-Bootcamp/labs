@@ -96,17 +96,17 @@ exact
 >> people, cats, dogs = 20, 30, 15
 >> string = ""
 >> if people < cats
->>  	string += "Too many cats! "
+>> 	string += "Too many cats! "
 >> end
 >> if people > cats
->> 		string += "Not many cats! "
+>> 	string += "Not many cats! "
 >> end
 >> if people < dogs
->> 		string += "The world is drooled on! "
+>> 	string += "The world is drooled on! "
 >> end
 >> dogs += 5
 >> if people >= dogs
->>  	string += "People are greater than or equal to dogs."
+>>  string += "People are greater than or equal to dogs."
 >> end
 >> string
 
@@ -165,10 +165,9 @@ exact
 xooooxoo; nil
 >> x, o = 'x', 'o'
 >> string = ""
->> grid = [ [x, o, o, o],
->>			[o, x, o, o] ]
->> grid.each do | row |
->>	row.each do | col |
+>> grid = [[x, o, o, o], [o, x, o, o]]
+>> grid.each do |row|
+>>	row.each do |col|
 >>		string += col
 >>	end
 >> end
@@ -185,7 +184,7 @@ exact
 >> end
 >> secretWord
 
-exact 
+exact
 "The struggle is real, Go bears!"
 >> count = 3
 >> berkeley = []
