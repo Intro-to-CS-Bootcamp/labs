@@ -125,11 +125,13 @@ C. Error
 
 !exact
 error
+Continued from previous question:
 >> array[4] = ['Pied Piper']
 >> puts array[0] + ' is the founder of ' + array[4]
 
 exact
 Richard is the founder of Pied Piper; nil
+Continued from previous question:
 >> puts array[0] + ' is the founder of ' + array[4][0]
 
 !exact
@@ -185,23 +187,27 @@ exact
 >> secretWord
 
 exact
-"The struggle is real, Go bears!"
+The struggle is real, Go Bears!; nil
 >> count = 3
 >> berkeley = []
+>>
 >> count.times do
 >>     if count < 10
 >>         berkeley = []
 >>         count += 1
 >>     end
->>     berkeley.push "Go bears!"
+>>     berkeley.push "Go Bears!"
 >> end
+>>
 >> if count < 10
 >>     berkeley.push "elggurts ehT"
 >>     berkeley.push true
 >> end
+>>
 >> if berkeley.pop
 >>     berkeley.push "is real"
 >> end
+>>
 >> cal = [berkeley[1].reverse]
 >> cal.push berkeley.pop
 >> puts cal.join(" ") + ', ' + berkeley[0]
