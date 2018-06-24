@@ -48,7 +48,7 @@ exact
 >> def big_game_1982(score0, score1)
 >> 	return "The Play score is " + score0 + " to " + score1
 >> end
->> puts big_game_1982((go_bears(score)).to_s, (palo_alto_school_of_trees(score)).to_s)
+>> big_game_1982((go_bears(score)).to_s, (palo_alto_school_of_trees(score)).to_s)
 
 
 
