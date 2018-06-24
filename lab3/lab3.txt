@@ -21,7 +21,7 @@ CHAPTER 9: Writing your own methods
 >> def sum_cubs(a, b)
 >> 	return cube(a) + cube(b)
 >> end
->> puts sum_cubs(2,3)
+>> sum_cubs(2,3)
 
 !exact
 [2, 4, 6]
@@ -48,5 +48,8 @@ exact
 >> 	return "The Play score is " + score0 + " to " + score1
 >> end
 >> puts big_game_1982((go_bears(score)).to_s, (palo_alto_school_of_trees(score)).to_s)
+
+
+
 
 chapter end
