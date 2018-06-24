@@ -24,7 +24,7 @@ CHAPTER 9: Writing your own methods
 >> sum_cubs(2,3)
 
 !exact
-[2, 3, 4, 6]
+[2,3,4,6]
 >> def special_list(list)
 >> 	result = []
 >> 	list.each do |num|
