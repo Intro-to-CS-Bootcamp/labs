@@ -6,9 +6,9 @@ CHAPTER 9: Writing your own methods
 ">:("
 >> def make_emoticons(a, b)
 >> 	if a + b > 0
->> 		return ":)"
+>> 	  return ":)"
 >> 	else
->> 		return ">:("
+>> 	  return ">:("
 >> 	end
 >> end
 >> make_emoticons(2, -5)
@@ -16,11 +16,11 @@ CHAPTER 9: Writing your own methods
 !exact
 35
 >> def cube(x)
->> 	return x**3
+>> 	 return x**3
 >> end
 >>
 >> def sum_cubs(a, b)
->> 	return cube(a) + cube(b)
+>> 	 return cube(a) + cube(b)
 >> end
 >>
 >> sum_cubs(2,3)
@@ -28,12 +28,12 @@ CHAPTER 9: Writing your own methods
 !exact
 [2,3,4,6]
 >> def special_list(list)
->> 	result = []
->> 	list.each do |num|
->> 		if num % 2 == 0 or num % 3 == 0
->> 			result.push num
->> 		end
->> 	end
+>> 	 result = []
+>> 	 list.each do |num|
+>> 	   if num % 2 == 0 or num % 3 == 0
+>>       result.push num
+>> 	   end
+>> 	 end
 >> 	return result
 >> end
 >> special_list([1,2,3,4,5,6,7])
@@ -42,20 +42,17 @@ exact
 "The play score is 25 to 20"
 >> score = 50
 >> def go_bears(score)
->> 	return score / 2
+>>   return score / 2
 >> end
 >>
 >> def palo_alto_school_of_trees(score)
->> 	return go_bears(score) - 5
+>> 	 return go_bears(score) - 5
 >> end
 >>
 >> def big_game_1982(score0, score1)
->> 	return "The play score is " + score0.to_s + " to " + score1.to_s
+>>   return "The play score is " + score0.to_s + " to " + score1.to_s
 >> end
 >>
 >> big_game_1982(go_bears(score), palo_alto_school_of_trees(score))
-
-
-
 
 chapter end
