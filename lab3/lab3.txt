@@ -18,9 +18,11 @@ CHAPTER 9: Writing your own methods
 >> def cube(x)
 >> 	return x**3
 >> end
+>>
 >> def sum_cubs(a, b)
 >> 	return cube(a) + cube(b)
 >> end
+>>
 >> sum_cubs(2,3)
 
 !exact
@@ -37,18 +39,21 @@ CHAPTER 9: Writing your own methods
 >> special_list([1,2,3,4,5,6,7])
 
 exact
-"The Play score is 25 to 20"
+"The play score is 25 to 20"
 >> score = 50
 >> def go_bears(score)
 >> 	return score / 2
 >> end
+>>
 >> def palo_alto_school_of_trees(score)
 >> 	return go_bears(score) - 5
 >> end
+>>
 >> def big_game_1982(score0, score1)
->> 	return "The Play score is " + score0 + " to " + score1
+>> 	return "The play score is " + score0.to_s + " to " + score1.to_s
 >> end
->> big_game_1982((go_bears(score)).to_s, (palo_alto_school_of_trees(score)).to_s)
+>>
+>> big_game_1982(go_bears(score), palo_alto_school_of_trees(score))
 
 
 
