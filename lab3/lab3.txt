@@ -24,7 +24,7 @@ CHAPTER 9: Writing your own methods
 >> 	 return cube(a) + cube(b)
 >> end
 >>
->> sum_cubes(2,3)
+>> sum_cubes(2, 3)
 
 !exact
 [2, 3, 4, 6]
