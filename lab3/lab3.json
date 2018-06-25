@@ -29,7 +29,7 @@
           ">>   return cube(a) + cube(b)",
           ">> end",
           ">>",
-          ">> sum_cubes(2,3)"
+          ">> sum_cubes(2, 3)"
         ]
       },
       {
