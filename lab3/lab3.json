@@ -7,11 +7,11 @@
         "answer": "\">:(\"",
         "question": [
           ">> def make_emoticons(a, b)",
-          ">>  if a + b > 0",
-          ">>    return \":)\"",
-          ">>  else",
-          ">>    return \">:(\"",
-          ">>  end",
+          ">>   if a + b > 0",
+          ">>     return \":)\"",
+          ">>   else",
+          ">>     return \">:(\"",
+          ">>   end",
           ">> end",
           ">>",
           ">> make_emoticons(2, -5)"
@@ -25,11 +25,11 @@
           ">>   return x**3",
           ">> end",
           ">>",
-          ">> def sum_cubs(a, b)",
+          ">> def sum_cubes(a, b)",
           ">>   return cube(a) + cube(b)",
           ">> end",
           ">>",
-          ">> sum_cubs(2,3)"
+          ">> sum_cubes(2,3)"
         ]
       },
       {
@@ -43,7 +43,7 @@
           ">>       result.push num",
           ">>     end",
           ">>   end",
-          ">>  return result",
+          ">>   return result",
           ">> end",
           ">>",
           ">> special_list([1, 2, 3, 4, 5, 6, 7])"
