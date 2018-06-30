@@ -1,1 +1,74 @@
-[{"chapter":"CHAPTER 9: Writing your own methods","questions":[{"exact":false,"answer":"\">:(\"","question":[">> def make_emoticons(a, b)",">> \tif a + b > 0",">> \t\treturn \":)\"",">> \telse",">> \t\treturn \">:(\"",">> \tend",">> end",">> make_emoticons(2, -5)"]},{"exact":false,"answer":"35","question":[">> def cube(x)",">> \treturn x**3",">> end",">> def sum_cubs(a, b)",">> \treturn cube(a) + cube(b)",">> end",">> sum_cubs(2,3)"]},{"exact":false,"answer":"[2,3,4,6]","question":[">> def special_list(list)",">> \tresult = []",">> \tlist.each do |num|",">> \t\tif num % 2 == 0 or num % 3 == 0",">> \t\t\tresult.push num",">> \t\tend",">> \tend",">> \treturn result",">> end",">> special_list([1,2,3,4,5,6,7])"]},{"exact":true,"answer":"\"The Play score is 25 to 20\"","question":[">> score = 50",">> def go_bears(score)",">> \treturn score / 2",">> end",">> def palo_alto_school_of_trees(score)",">> \treturn go_bears(score) - 5",">> end",">> def big_game_1982(score0, score1)",">> \treturn \"The Play score is \" + score0 + \" to \" + score1",">> end",">> big_game_1982((go_bears(score)).to_s, (palo_alto_school_of_trees(score)).to_s)"]}]}]
+[
+  {
+    "chapter": "CHAPTER 9: Writing your own methods",
+    "questions": [
+      {
+        "exact": false,
+        "answer": "\">:(\"",
+        "question": [
+          ">> def make_emoticons(a, b)",
+          ">>   if a + b > 0",
+          ">>     return \":)\"",
+          ">>   else",
+          ">>     return \">:(\"",
+          ">>   end",
+          ">> end",
+          ">>",
+          ">> make_emoticons(2, -5)"
+        ]
+      },
+      {
+        "exact": false,
+        "answer": "35",
+        "question": [
+          ">> def cube(x)",
+          ">>   return x**3",
+          ">> end",
+          ">>",
+          ">> def sum_cubes(a, b)",
+          ">>   return cube(a) + cube(b)",
+          ">> end",
+          ">>",
+          ">> sum_cubes(2, 3)"
+        ]
+      },
+      {
+        "exact": false,
+        "answer": "[2, 3, 4, 6]",
+        "question": [
+          ">> def special_list(list)",
+          ">>   result = []",
+          ">>   list.each do |num|",
+          ">>     if num % 2 == 0 || num % 3 == 0",
+          ">>       result.push num",
+          ">>     end",
+          ">>   end",
+          ">>   return result",
+          ">> end",
+          ">>",
+          ">> special_list([1, 2, 3, 4, 5, 6, 7])"
+        ]
+      },
+      {
+        "exact": true,
+        "answer": "\"The play score is 25 to 20\"",
+        "question": [
+          ">> score = 50",
+          ">> def go_bears(score)",
+          ">>   return score / 2",
+          ">> end",
+          ">>",
+          ">> def palo_alto_school_of_trees(score)",
+          ">>   return go_bears(score) - 5",
+          ">> end",
+          ">>",
+          ">> def big_game_1982(score0, score1)",
+          ">>   return \"The play score is \" + score0.to_s + \" to \" + score1.to_s",
+          ">> end",
+          ">>",
+          ">> big_game_1982(go_bears(score), palo_alto_school_of_trees(score))"
+        ]
+      }
+    ]
+  }
+]
