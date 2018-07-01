@@ -63,6 +63,7 @@ True
 >> puts has_key(7, 27539)
 
 !exact
+86
 `list.max` returns the maximum value of a list and `list.min` returns the minimum
 >> def func(list, depth)
 >>     if depth == 0
