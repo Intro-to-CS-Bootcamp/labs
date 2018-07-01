@@ -3,15 +3,15 @@ file start
 CHAPTER 10: RECURSION
 
 !exact
-21
+12
 >> def sum_up(x)
->>  if x == 0
->>      return x
+>> 	if x == 0
+>> 	    return x
 >>  elsif x % 2 == 0
->>      return x + sum_up(x / 2)
->>  else
->>      return x + sum_up(x / 4)
->>  end
+>> 	    return x + sum_up(x / 2)
+>> 	else
+>> 		return x + sum_up(x / 4)
+>> 	end
 >> end
 >> sum_up(12)
 
@@ -21,7 +21,7 @@ CHAPTER 10: RECURSION
 How many times was the sum_up function called in total?
 
 exact
-countdown(n-1)
+countdown(n-1) 
 Fill in the code on the empty line so that the function accurately counts down (prints) a number n from n to 0. (Hint: You do not need to and should not use "return")
 >> def countdown(n)
 >>  if n == 0
@@ -35,7 +35,7 @@ Fill in the code on the empty line so that the function accurately counts down (
 exact
 return is_odd(x-1); return is_even(x-1)
 Mutual recursion is a recursion when two functions are defined in terms of each other. Fill in the blanks so that is_even and is_odd call each other to find out if a number is even or odd. 
->> def is_even(x)
+>> def is_even x
 >>  if x == 0
 >>      return true
 >>  else
@@ -43,7 +43,7 @@ Mutual recursion is a recursion when two functions are defined in terms of each 
 >>  end
 >> end
 >> 
->> def is_odd(x)
+>> def is_odd x
 >>  if x == 0
 >>      return false
 >>  else
@@ -77,5 +77,6 @@ True
 >> end
 >> puts func([[[98, 84], [88, 74]],
               [[13, 86], [60, 99]]], 2)
+
 
 chapter end
