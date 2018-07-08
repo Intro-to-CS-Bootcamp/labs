@@ -1,0 +1,108 @@
+file start
+
+
+CHAPTER 11: Reading and Writing, Saving and Loading, Yin and…Something Else
+
+exact
+Go bears! Go bears! Go bears!
+>> count = 3
+>> while count > 0
+>>  puts "Go bears!"
+>>  count -= 1
+>> end
+(in Terminal)$ goBears10.rb > testFile.txt
+What does the file testFile.txt contain?
+
+!exact
+true
+>> filename = "testFile.txt"
+>> testString = "This string is reversed."
+>> File.open filename, 'w' do |f|
+>>  f.write testString
+>> end
+>> readString = File.read filename
+>> testString.reverse
+>> filesAreTheSame = readString == testString
+>> puts filesAreTheSame
+
+exact
+This string is reversed.
+(Continued from last question) What does testFile.txt contain?
+
+exact
+I want to graduate but first I need to pass freshman, sophomore, junior, and senior year.
+>> counter = 0
+>> limit = 4
+>> start = "I want to graduate but first I need to pass "
+>> schoolYear = ["freshman", "sophomore", "junior", "senior"]
+>> ending = "."
+>> print start
+>> while counter < limit
+>>   print "#{schoolYear[counter]}, "
+>>   counter += 1
+>>   if counter == limit - 1
+>>     print "and #{schoolYear[counter]} year"
+>>     counter += counter
+>>   end
+>> end
+>> print ending
+
+chapter end
+
+CHAPTER 12: NEW CLASSES OF OBJECTS
+
+!exact
+172800
+>> Time.gm(2018,6,3) - Time.gm(2018,6,1)
+
+!exact
+true
+>> dict = Hash.new
+>> dict2 = Hash.new
+>> dict == dict2
+
+!exact
+3
+>> dict2 = dict
+>> dict['a'], dict['b'] = 'Abstract', 'Baroque' 
+>> dict2['c'] = 'Cubism'
+>> dict.length
+
+exact
+Transfiguration; Potion; Herbology; Defence Against the Dark Arts & Potion
+>> prof = {'Mcgonagall' => 'Transfiguration', 'Slughorn' => 'Potion', 'Sprout' => 'Herbology', 'Snape' => 'Defence Against the Dark Arts'}
+>> prof['Snape'] = prof['Snape'] + ' & ' + prof['Slughorn']
+>> prof.each do |professor, subject|
+>>  puts subject
+>> end
+
+exact
+South side has Poke Bar. North side has Bongo Burgers. 
+>> berkeleyFoods = {}
+>> berkeleyFoods["South side"] = ["Poke Bar"]
+>> berkeleyFoods["North side"] = ["Bongo Burgers"]
+>> def placesToEat location, restuarants
+>>   print area = "#{location} has "
+>>   restuarants.each do |shop|
+>>     print "#{shop}. "
+>>   end
+>> end
+berkeleyFoods.each do |location, arrayOfRestaurants|
+  placesToEat location, arrayOfRestaurants
+end
+(Tip: watch out, there might be a space at the end)
+
+exact
+Do!co!ao!
+>> str, word = 'Fre Shavoca Do!', ''
+>> while str.length > 6
+>>  word += str[-3 .. -1]
+>>  str[-5, 3] = ''
+>> end
+>> puts word
+
+exact
+Class
+>> String.new.class.class
+
+chapter end
