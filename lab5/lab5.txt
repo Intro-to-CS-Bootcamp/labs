@@ -14,7 +14,7 @@ Go bears! Go bears! Go bears!
 What does the file testFile.txt contain?
 
 !exact
-true
+true; nil
 >> filename = "testFile.txt"
 >> testString = "This string is reversed."
 >> File.open filename, 'w' do |f|
@@ -30,7 +30,8 @@ This string is reversed.
 (Continued from last question) What does testFile.txt contain?
 
 exact
-I want to graduate but first I need to pass freshman, sophomore, junior, and senior year.
+I want to graduate but first I need to pass freshman, sophomore, junior, and senior year.; nil
+[NOTE: "print" has the same behavior as "puts" but "print" does not start a new line. For instance, >> print "1"  >>print "2" will display "12"]
 >> counter = 0
 >> limit = 4
 >> start = "I want to graduate but first I need to pass "
@@ -63,13 +64,14 @@ true
 
 !exact
 3
+(Continued from last question)
 >> dict2 = dict
 >> dict['a'], dict['b'] = 'Abstract', 'Baroque' 
 >> dict2['c'] = 'Cubism'
 >> dict.length
 
 exact
-Transfiguration; Potion; Herbology; Defence Against the Dark Arts & Potion
+Transfiguration; Potion; Herbology; Defence Against the Dark Arts & Potion; nil
 >> prof = {'Mcgonagall' => 'Transfiguration', 'Slughorn' => 'Potion', 'Sprout' => 'Herbology', 'Snape' => 'Defence Against the Dark Arts'}
 >> prof['Snape'] = prof['Snape'] + ' & ' + prof['Slughorn']
 >> prof.each do |professor, subject|
@@ -77,29 +79,30 @@ Transfiguration; Potion; Herbology; Defence Against the Dark Arts & Potion
 >> end
 
 exact
-South side has Poke Bar. North side has Bongo Burgers. 
+Southside has Poke Bar. Northside has Bongo Burgers. ; nil
 >> berkeleyFoods = {}
->> berkeleyFoods["South side"] = ["Poke Bar"]
->> berkeleyFoods["North side"] = ["Bongo Burgers"]
+>> berkeleyFoods["Southside"] = ["Poke Bar"]
+>> berkeleyFoods["Northside"] = ["Bongo Burgers"]
 >> def placesToEat location, restuarants
 >>   print area = "#{location} has "
 >>   restuarants.each do |shop|
 >>     print "#{shop}. "
 >>   end
 >> end
-berkeleyFoods.each do |location, arrayOfRestaurants|
-  placesToEat location, arrayOfRestaurants
-end
+>> berkeleyFoods.each do |location, arrayOfRestaurants|
+>>  placesToEat location, arrayOfRestaurants
+>> end
 (Tip: watch out, there might be a space at the end)
 
 exact
-Do!co!ao!
+"Do!co!ao!"
 >> str, word = 'Fre Shavoca Do!', ''
 >> while str.length > 6
 >>  word += str[-3 .. -1]
 >>  str[-5, 3] = ''
 >> end
->> puts word
+>> word
+(Tip: Don't forget your "")
 
 exact
 Class
