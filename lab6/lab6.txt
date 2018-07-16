@@ -74,11 +74,11 @@ I am an apple; yeee; nil
 >>  def apple()
 >>      puts "I am an apple"
 >>  end
->>end
+>> end
 >>
->>thing = MyStuff.new()
->>thing.apple()
->>puts thing.la
+>> thing = MyStuff.new()
+>> thing.apple()
+>> puts thing.la
 
 exact
 Under the moonlight; you see a sight that almost stops your heart; nil
@@ -93,14 +93,12 @@ Sing me a song!
 >> end
 >>
 >> michael_jackson = Song.new(["Under the moonlight",
->>                             "you see a sight that almost stops your heart"]
->>          
+>>                             "you see a sight that almost stops your heart"]     
 >> logic = Song.new(["Red light stop, green light go",
 >>                   "my mind goes crazy but I still look hella calm"])
->>
 >> michael_jackson.sing_me_a_song()
 
-exact  
+exact
 Red light stop, green light go; my mind goes crazy but I still look hella calm
 (Continued from last question)
 >> logic.sing_me_a_song()
