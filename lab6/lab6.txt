@@ -69,8 +69,8 @@ I am an apple; yeee; nil
 >>      @la = "yeee"
 >>  end
 >>  def la
->>		@la
->> 	end
+>>      @la
+>>  end
 >>  def apple()
 >>      puts "I am an apple"
 >>  end
@@ -93,13 +93,13 @@ Sing me a song!
 >> end
 >>
 >> michael_jackson = Song.new(["Under the moonlight",
->> 							   "you see a sight that almost stops your heart"]
->>			
+>>                             "you see a sight that almost stops your heart"]
+>>          
 >> logic = Song.new(["Red light stop, green light go",
->> 					 "my mind goes crazy but I still look hella calm"])
+>>                   "my mind goes crazy but I still look hella calm"])
 >>
 >> michael_jackson.sing_me_a_song()
-  
+
 exact  
 Red light stop, green light go; my mind goes crazy but I still look hella calm
 (Continued from last question)
@@ -114,7 +114,7 @@ exact
 "3 bars of..."
 Chocolate Bars (remember format for returning strings!)
 >> choco = Proc.new do |bar|
->> 	bar.to_s + ' bars of...'
+>>  bar.to_s + ' bars of...'
 >> end
 >> choco.call(3)
 
@@ -122,7 +122,7 @@ exact
 "3 bars of... succulent delight"
 (continued from last question)
 >> bar = Proc.new do |bite, crunchy| 
->> 	(bite.call(3)) + crunchy
+>>  (bite.call(3)) + crunchy
 >> end
 >> bar.call(choco, " succulent delight")
 
@@ -130,17 +130,17 @@ exact
 5 calls; Calling 5; 4 calls; 5
 Team Meeting (Don't forget the return value)
 >> def incredible(team, ing)
->>	team.call(ing)
->>	ing = ing 
+>>  team.call(ing)
+>>  ing = ing 
 >> end
 >> meeting = Proc.new do |room|
->>	puts room.to_s + " calls"
->>	if room < 5
->>		ing = room
->>	else
->>		puts "Calling " + room.to_s
->>		meeting.call(room - 1)
->>	end
+>>  puts room.to_s + " calls"
+>>  if room < 5
+>>      ing = room
+>>  else
+>>      puts "Calling " + room.to_s
+>>      meeting.call(room - 1)
+>>  end
 >> end
 >> incredible(meeting, 5)
 
@@ -148,20 +148,20 @@ exact
 still growing; still growing; "grown"
 #Question 3: Herbology Class
 >> def plant(seeds, soil)
->>	if seeds % 5 == 0
->>		return "grown"
->>	end
+>>  if seeds % 5 == 0
+>>      return "grown"
+>>  end
 >> soil.call(seeds + 1)
 >> end
 >> def leaves(green)
->>	green % 3 < green / 3
+>>  green % 3 < green / 3
 >> end
 >> sprout = Proc.new do |grow|
->>	if leaves(grow)
->>		puts "grow " + grow.to_s
->>	end
->>	puts "still growing"
->>	plant(grow + 1, sprout)
+>>  if leaves(grow)
+>>      puts "grow " + grow.to_s
+>>  end
+>>  puts "still growing"
+>>  plant(grow + 1, sprout)
 >> end
 >> plant(1, sprout)
 
@@ -175,17 +175,17 @@ result.push(f.call(item))
 Fill in the blanks for the method map below that takes in an array of numbers, applies a function f to every element of the array, and returns the new array.
 >> # Example:
 >> # add_two = Proc.new do |x|
->> #  	x + 1
+>> #    x + 1
 >> #  end
 >> # map [1, 2, 3], add_two
 >> # => [3, 4, 5]
 >> 
 >> def map(lst, f)
->>	result = []
->>	lst.each do |item|
->>		__________________________
->>	end
->>	result
+>>  result = []
+>>  lst.each do |item|
+>>      __________________________
+>>  end
+>>  result
 >> end
 
 chapter end
