@@ -99,7 +99,7 @@ Sing me a song!
 >> michael_jackson.sing_me_a_song()
 
 exact
-Red light stop, green light go; my mind goes crazy but I still look hella calm
+Red light stop, green light go; my mind goes crazy but I still look hella calm; nil
 (Continued from last question)
 >> logic.sing_me_a_song()
 
@@ -125,11 +125,10 @@ exact
 >> bar.call(choco, " succulent delight")
 
 exact
-5 calls; Calling 5; 4 calls; 5
-Team Meeting (Don't forget the return value)
+5 calls; Calling 5; 4 calls; 4
+Team Meeting (Pay special attention to the return value -- doesn't have to have "return" explicitly to return a final value!)
 >> def incredible(team, ing)
 >>  team.call(ing)
->>  ing = ing 
 >> end
 >> meeting = Proc.new do |room|
 >>  puts room.to_s + " calls"
@@ -144,12 +143,12 @@ Team Meeting (Don't forget the return value)
 
 exact
 still growing; still growing; "grown"
-#Question 3: Herbology Class
+Herbology Class
 >> def plant(seeds, soil)
 >>  if seeds % 5 == 0
 >>      return "grown"
 >>  end
->> soil.call(seeds + 1)
+>>  soil.call(seeds + 1)
 >> end
 >> def leaves(green)
 >>  green % 3 < green / 3
@@ -170,7 +169,7 @@ exact
 
 !exact
 result.push(f.call(item))
-Fill in the blanks for the method map below that takes in an array of numbers, applies a function f to every element of the array, and returns the new array.
+Fill in the blanks for the method map below that takes in an array of numbers, applies a function f to every element of the array, and returns the new array. Use `.call`.
 >> # Example:
 >> # add_two = Proc.new do |x|
 >> #    x + 1
