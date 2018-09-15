@@ -5,13 +5,13 @@ CHAPTER 10: RECURSION
 !exact
 21
 >> def sum_up(x)
->>  if x == 0
->>      return x
->>  elsif x % 2 == 0
->>      return x + sum_up(x / 2)
->>  else
->>      return x + sum_up(x / 4)
->>  end
+>>   if x == 0
+>>     return x
+>>   elsif x % 2 == 0
+>>     return x + sum_up(x / 2)
+>>   else
+>>     return x + sum_up(x / 4)
+>>   end
 >> end
 >> sum_up(12)
 
@@ -24,35 +24,35 @@ exact
 countdown(n-1)
 Fill in the code on the empty line so that the function accurately counts down (prints) a number n from n to 0. (Hint: You do not need to and should not use "return")
 >> def countdown(n)
->>  if n == 0
->>      puts 0
->>  else
->>      puts n
->>      ___________________
->>  end
+>>   if n == 0
+>>     puts 0
+>>   else
+>>     puts n
+>>     ___________________
+>>   end
 >> end
 
 exact
-return is_odd(x-1); return is_even(x-1)
-Mutual recursion is a recursion when two functions are defined in terms of each other. Fill in the blanks so that is_even and is_odd call each other to find out if a number is even or odd. 
+is_odd(x - 1); is_even(x - 1)
+Mutual recursion is a recursion when two functions are defined in terms of each other. Fill in the blanks so that is_even and is_odd call each other to find out if a number is even or odd. (Use semicolon to separate lines, don't use return, and make sure you use whitespace between operators.)
 >> def is_even(x)
->>  if x == 0
->>      return true
->>  else
->>      __________________
->>  end
+>>   if x == 0
+>>     true
+>>   else
+>>     __________________
+>>   end
 >> end
 >> 
 >> def is_odd(x)
->>  if x == 0
->>      return false
->>  else
->>      __________________
->>  end
+>>   if x == 0
+>>     false
+>>   else
+>>     __________________
+>>   end
 >> end
 
 !exact
-True
+true
 >> def has_key(key, number)
 >>   is_key = number % 10
 >>   if is_key == key
@@ -60,23 +60,23 @@ True
 >>   end
 >>   return has_key(key, number / 10)
 >> end
->> puts has_key(7, 27539)
+>> has_key(7, 27539)
 
 !exact
 86
 `list.max` returns the maximum value of a list and `list.min` returns the minimum
 >> def func(list, depth)
->>     if depth == 0
->>         return list.max
->>     else
->>         result = []
->>         list.each do |sublist|
->>             result.push(func(sublist, depth - 1))
->>         end
->>         return result.min
+>>   if depth == 0
+>>     return list.max
+>>   else
+>>     result = []
+>>     list.each do |sublist|
+>>       result.push(func(sublist, depth - 1))
 >>     end
+>>     return result.min
+>>   end
 >> end
->> puts func([[[98, 84], [88, 74]],
-              [[13, 86], [60, 99]]], 2)
+>> func([[[98, 84], [88, 74]],
+         [[13, 86], [60, 99]]], 2)
 
 chapter end
