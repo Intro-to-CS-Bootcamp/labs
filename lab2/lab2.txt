@@ -20,7 +20,7 @@ exact
 
 !exact
 0
->> rand(6)/ 6
+>> rand(6) / 6
 
 exact
 welcome to cal, smarter-than-stanfords; nil
@@ -55,7 +55,7 @@ true
 
 !exact
 true
->> 'a' < 'A' || 5 < 20 && 4.6.to_i == 4
+>> 'a' < 'A' || (5 < 20 && 4.6.to_i == 4)
 
 !exact
 "1"
@@ -119,8 +119,8 @@ CHAPTER 8: Arrays and Iterators
 C
 >> array = ['Richard', 'Jared', 'Gilfoyle', 'Dinesh']
 >> puts array[3] + ' is friends with ' + array[4]
-A. Gilfoyle is friends with Dinesh
-B. Dinesh is friends with nil
+A. Gilfoyle is friends with Dinesh; nil
+B. Dinesh is friends with nil; nil
 C. Error
 
 !exact
