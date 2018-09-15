@@ -7,8 +7,8 @@ exact
 Go bears! Go bears! Go bears!
 >> count = 3
 >> while count > 0
->>  puts "Go bears!"
->>  count -= 1
+>>   puts "Go bears!"
+>>   count -= 1
 >> end
 (in Terminal)$ goBears10.rb > testFile.txt
 What does the file testFile.txt contain?
@@ -18,7 +18,7 @@ true; nil
 >> filename = "testFile.txt"
 >> testString = "This string is reversed."
 >> File.open filename, 'w' do |f|
->>  f.write testString
+>>   f.write testString
 >> end
 >> readString = File.read filename
 >> testString.reverse
@@ -46,7 +46,7 @@ I want to graduate but first I need to pass freshman, sophomore, junior, and sen
 >>     counter += counter
 >>   end
 >> end
->> print ending
+>> puts ending
 
 chapter end
 
@@ -77,9 +77,10 @@ Transfiguration; Potion; Herbology; Defence Against the Dark Arts & Potion; nil
 >> prof.each do |professor, subject|
 >>  puts subject
 >> end
+>> nil
 
 exact
-Southside has Poke Bar. Northside has Bongo Burgers. ; nil
+Southside has Poke Bar. Northside has Bongo Burgers. What great food!; nil
 >> berkeleyFoods = {}
 >> berkeleyFoods["Southside"] = ["Poke Bar"]
 >> berkeleyFoods["Northside"] = ["Bongo Burgers"]
@@ -92,7 +93,7 @@ Southside has Poke Bar. Northside has Bongo Burgers. ; nil
 >> berkeleyFoods.each do |location, arrayOfRestaurants|
 >>  placesToEat location, arrayOfRestaurants
 >> end
-(Tip: watch out, there might be a space at the end)
+>> puts "What great food!"
 
 exact
 "Do!co!ao!"
@@ -102,7 +103,6 @@ exact
 >>  str[-5, 3] = ''
 >> end
 >> word
-(Tip: Don't forget your "")
 
 exact
 Class
