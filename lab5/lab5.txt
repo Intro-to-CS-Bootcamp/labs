@@ -75,7 +75,7 @@ Transfiguration; Potion; Herbology; Defence Against the Dark Arts & Potion; nil
 >> prof = {'Mcgonagall' => 'Transfiguration', 'Slughorn' => 'Potion', 'Sprout' => 'Herbology', 'Snape' => 'Defence Against the Dark Arts'}
 >> prof['Snape'] = prof['Snape'] + ' & ' + prof['Slughorn']
 >> prof.each do |professor, subject|
->>  puts subject
+>>   puts subject
 >> end
 >> nil
 
@@ -99,8 +99,8 @@ exact
 "Do!co!ao!"
 >> str, word = 'Fre Shavoca Do!', ''
 >> while str.length > 6
->>  word += str[-3 .. -1]
->>  str[-5, 3] = ''
+>>   word += str[-3 .. -1]
+>>   str[-5, 3] = ''
 >> end
 >> word
 
