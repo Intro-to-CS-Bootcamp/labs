@@ -1,0 +1,13 @@
+file start
+
+Course Introduction
+
+exact
+yes
+>> Are you glad to be done with finals?
+
+exact
+yes
+>> Are you looking forward to this course?
+
+chapter end
