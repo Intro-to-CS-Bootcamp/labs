@@ -1,13 +1,13 @@
 file start
 
-Course Introduction
+Course Introduction (these are just to get you familiar with the labs, and are non-programming questions)
 
 exact
 yes
->> Are you glad to be done with finals?
+>> Are you glad to be done with finals? (type 'yes')
 
 exact
 yes
->> Are you looking forward to this course?
+>> Are you looking forward to this course? (type 'yes')
 
 chapter end
