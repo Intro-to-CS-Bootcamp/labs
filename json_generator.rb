@@ -1,7 +1,6 @@
 require 'json'
 
 Dir.chdir(ARGV[0])
-puts Dir.pwd
 IO.readlines(ARGV[0] + ".txt").each do |line|
   line == "\n" ? next : line.chomp!
 
