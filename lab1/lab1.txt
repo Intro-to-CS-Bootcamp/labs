@@ -90,7 +90,7 @@ exact
 >> you + ' ' + say
 
 !exact
-C
+E
 >> roses = 'red'
 >> violets = 'blue'
 >> rhyming = puts roses + ' and ' + violets
@@ -99,7 +99,7 @@ A. Error
 B. red and blue; nil
 C. nil; nil
 D. roses and violets; nil
-E. nil
+E. red and blue; nil; nil
 
 !exact
 6; 3; nil
