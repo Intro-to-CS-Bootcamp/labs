@@ -95,11 +95,11 @@ C
 >> violets = 'blue'
 >> rhyming = puts roses + ' and ' + violets
 >> puts rhyming
-A. Error		
+A. Error
 B. red and blue; nil
-C. nil; nil   
+C. nil; nil
 D. roses and violets; nil
-E. nil 	
+E. nil
 
 !exact
 6; 3; nil
@@ -109,7 +109,7 @@ E. nil
 
 !exact
 A
->> apple = puts 
+>> apple = puts
 >> apple watch
 A. Error
 B. 3
@@ -139,10 +139,40 @@ exact
 
 exact
 answer = gets.chomp
-Fill in the blank line so that we get a correct user input for "answer" 
+Fill in the blank line so that we get a correct user input for "answer"
 >> puts 'How\'s the weather today?'
 >> ____________________
 >> puts 'It\'s ' + answer + ' today.'
 
 chapter end
 
+CHAPTER 6: MORE ABOUT METHODS
+
+exact
+"CAPITALIZE"
+>> 'Capitalize'.upcase
+
+!exact
+2
+>> 55 / 5 % 3
+
+!exact
+10
+>> 10 % 12
+
+!exact
+2024
+>> 'It is '.length + 2018
+
+!exact
+0
+>> rand(6) / 6
+
+exact
+welcome to cal, smarter-than-stanfords; nil
+>> str = 'sdrofnats-naht-retrams'
+>> rts = ', ' + str.reverse
+>> rts = 'welcome to cal' + rts
+>> puts rts
+
+chapter end

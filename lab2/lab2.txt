@@ -1,36 +1,5 @@
 file start
 
-CHAPTER 6: MORE ABOUT METHODS
-
-exact
-"CAPITALIZE"
->> 'Capitalize'.upcase
-
-!exact
-2
->> 55 / 5 % 3
-
-!exact
-10
->> 10 % 12
-
-!exact
-2024
->> 'It is '.length + 2018
-
-!exact
-0
->> rand(6) / 6
-
-exact
-welcome to cal, smarter-than-stanfords; nil
->> str = 'sdrofnats-naht-retrams'
->> rts = ', ' + str.reverse
->> rts = 'welcome to cal' + rts
->> puts rts
-
-chapter end
-
 CHAPTER 7: FLOW CONTROL
 
 !exact
@@ -39,11 +8,11 @@ true
 
 !exact
 error
->> 50 / 5 > '10' 
+>> 50 / 5 > '10'
 
 !exact
 false
->> '5' < '20' 
+>> '5' < '20'
 
 !exact
 false
@@ -86,7 +55,7 @@ I love cs!; nil
 !exact
 2; 1; 0; nil
 >> n = 2
->> while n > -1 
+>> while n > -1
 >>     puts n
 >>     n = n - 1
 >> end
