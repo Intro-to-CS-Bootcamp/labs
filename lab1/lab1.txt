@@ -161,18 +161,23 @@ exact
 >> 10 % 12
 
 !exact
-2024
->> 'It is '.length + 2018
+2025
+>> 'It is '.length + 2019
 
 !exact
 0
 >> rand(6) / 6
 
 exact
-welcome to cal, smarter-than-stanfords; nil
->> str = 'sdrofnats-naht-retrams'
+welcome to cal, smarter-than-stanford-kids; nil
+>> str = 'sdik-sdrofnats-naht-retrams'
 >> rts = ', ' + str.reverse
 >> rts = 'welcome to cal' + rts
 >> puts rts
+
+!exact
+OK
+The secret word(phrase) for this week is: 'Tom Hiddleston'. 
+Please type 'OK' to finish.
 
 chapter end
