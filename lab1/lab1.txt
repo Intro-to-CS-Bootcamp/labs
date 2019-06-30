@@ -170,7 +170,7 @@ exact
 
 exact
 welcome to cal, smarter-than-stanford-kids; nil
->> str = 'sdik-sdrofnats-naht-retrams'
+>> str = 'sdik-drofnats-naht-retrams'
 >> rts = ', ' + str.reverse
 >> rts = 'welcome to cal' + rts
 >> puts rts
