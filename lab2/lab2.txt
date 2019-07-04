@@ -181,4 +181,10 @@ The struggle is real, Go Bears!; nil
 >> cal.push berkeley.pop
 >> puts cal.join(" ") + ', ' + berkeley[0]
 
+!exact
+OK
+Congrats for complete the lab!
+The secret celebrity name for this week (week 2) is: Beyonce
+Type OK to exit :)
+
 chapter end
