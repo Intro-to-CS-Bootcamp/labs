@@ -183,8 +183,9 @@ The struggle is real, Go Bears!; nil
 
 !exact
 OK
-Congrats for complete the lab!
 The secret celebrity name for this week (week 2) is: Beyonce
+Please put this in a new text file called "lab2-name.txt".
+Submit the file under "scores" tab.
 Type OK to exit :)
 
 chapter end
