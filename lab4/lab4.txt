@@ -21,7 +21,7 @@ CHAPTER 10: RECURSION
 How many times was the sum_up function called in total?
 
 exact
-countdown(n-1)
+countdown(n - 1)
 Fill in the code on the empty line so that the function accurately counts down (prints) a number n from n to 0. (Hint: You do not need to and should not use "return")
 >> def countdown(n)
 >>   if n == 0
@@ -78,5 +78,10 @@ true
 >> end
 >> func([[[98, 84], [88, 74]],
          [[13, 86], [60, 99]]], 2)
+
+!exact
+ok
+The secret celebrity name for this week is: Scarlett Johansson. 
+Type OK to complete!
 
 chapter end
