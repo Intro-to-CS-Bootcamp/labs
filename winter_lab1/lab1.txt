@@ -229,14 +229,6 @@ I love cs!; nil
 >>     puts 'I hate cs!'
 >> end
 
-!exact
-2; 1; 0; nil
->> n = 2
->> while n > -1
->>     puts n
->>     n = n - 1
->> end
-
 exact
 "Too many cats! People are greater than or equal to dogs."
 >> people, cats, dogs = 20, 30, 15
