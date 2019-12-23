@@ -175,11 +175,6 @@ welcome to cal, smarter-than-stanford-kids; nil
 >> rts = 'welcome to cal' + rts
 >> puts rts
 
-!exact
-OK
-The secret word(phrase) for this week is: 'Tom Hiddleston'. 
-Please type 'OK' to finish.
-
 chapter end
 
 CHAPTER 7: FLOW CONTROL
@@ -305,5 +300,10 @@ exact
 >> end
 >>
 >> big_game_1982(go_bears(score), palo_alto_school_of_trees(score))
+
+!exact
+OK
+The secret word(phrase) for this week is: 'Tom Hiddleston'. 
+Please type 'OK' to finish.
 
 chapter end
