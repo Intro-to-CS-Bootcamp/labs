@@ -1,0 +1,194 @@
+file start
+
+CHAPTER 10: RECURSION
+
+!exact
+21
+>> def sum_up(x)
+>>   if x == 0
+>>     return x
+>>   elsif x % 2 == 0
+>>     return x + sum_up(x / 2)
+>>   else
+>>     return x + sum_up(x / 4)
+>>   end
+>> end
+>> sum_up(12)
+
+!exact
+4
+(Continued from Question 1) 
+How many times was the sum_up function called in total?
+
+exact
+countdown(n - 1)
+Fill in the code on the empty line so that the function accurately counts down (prints) a number n from n to 0. (Hint: You do not need to and should not use "return")
+>> def countdown(n)
+>>   if n == 0
+>>     puts 0
+>>   else
+>>     puts n
+>>     ___________________
+>>   end
+>> end
+
+exact
+is_odd(x - 1); is_even(x - 1)
+Mutual recursion is a recursion when two functions are defined in terms of each other. Fill in the blanks so that is_even and is_odd call each other to find out if a number is even or odd. (Use semicolon to separate lines, don't use return, and make sure you use whitespace between operators.)
+>> def is_even(x)
+>>   if x == 0
+>>     true
+>>   else
+>>     __________________
+>>   end
+>> end
+>> 
+>> def is_odd(x)
+>>   if x == 0
+>>     false
+>>   else
+>>     __________________
+>>   end
+>> end
+
+!exact
+true
+>> def has_key(key, number)
+>>   is_key = number % 10
+>>   if is_key == key
+>>     return true
+>>   end
+>>   return has_key(key, number / 10)
+>> end
+>> has_key(7, 27539)
+
+!exact
+86
+`list.max` returns the maximum value of a list and `list.min` returns the minimum
+>> def func(list, depth)
+>>   if depth == 0
+>>     return list.max
+>>   else
+>>     result = []
+>>     list.each do |sublist|
+>>       result.push(func(sublist, depth - 1))
+>>     end
+>>     return result.min
+>>   end
+>> end
+>> func([[[98, 84], [88, 74]],
+         [[13, 86], [60, 99]]], 2)
+
+chapter end
+
+
+CHAPTER 13. CREATING NEW CLASSES, CHANGING EXISTING ONES
+
+exact
+Customers are really mad! Game over.; nil
+For Q1-3, please input the LAST line displayed in the interpreter. (Don't forget the nil)
+>> class BobaGame
+>>   def initialize(name)
+>>     @name = name
+>>     @balance = 20
+>>     @stock = 0
+>>     @customer_number = 0
+>>     puts "Welcome, #{@name}. Good luck!"
+>>   end
+>>
+>>   def restock(number)
+>>     @stock += number
+>>     @balance -= number * 3
+>>   end
+>>
+>>   def customer(number)
+>>     @customer_number += number
+>>     if @stock < @customer_number
+>>       puts "Customers are really mad! Game over."
+>>       return
+>>     end
+>>     @stock -= @customer_number
+>>     @balance += @customer_number * 5
+>>     @customer_number = 0
+>>     if @balance < 0 
+>>       puts "Oops! You went bankrupt! Game over."
+>>       return
+>>     elsif @balance >= 35
+>>       puts "Congratulations! You are advancing to the next level!"
+>>       return
+>>     end
+>>     puts 'Next day...'
+>>   end
+>> end
+>>
+>> ucha = BobaGame.new 'Ucha'
+>> ucha.restock(4)
+>> ucha.customer(3)
+>> ucha.restock(4)
+>> ucha.customer(6)
+
+exact
+Congratulations! You are advancing to the next level!; nil
+>> sharetea = BobaGame.new 'ShareTea'
+>> sharetea.restock(6)
+>> sharetea.customer(4)
+>> sharetea.restock(4)
+>> sharetea.customer(6)
+
+exact
+Next day...; nil
+>> gongcha = BobaGame.new 'GongCha'
+>> gongcha.restock(5)
+>> gongcha.customer(3)
+>> gongcha.restock(4)
+>> gongcha.customer(4)
+
+exact
+I am an apple; yeee; nil
+(Please include in all puts displayed in the processs)
+>> class MyStuff
+>>   def initialize()
+>>     @la = "yeee"
+>>   end
+>>   def la
+>>     @la
+>>   end
+>>   def apple()
+>>     puts "I am an apple"
+>>   end
+>> end
+>>
+>> thing = MyStuff.new()
+>> thing.apple()
+>> puts thing.la
+
+exact
+Under the moonlight; you see a sight that almost stops your heart; nil
+Sing me a song!
+>> class Song
+>>   def initialize(lyrics)
+>>     @lyrics = lyrics
+>>   end
+>>   def sing_me_a_song()
+>>     @lyrics.each {|line| puts line}
+>>     nil
+>>   end
+>> end
+>>
+>> michael_jackson = Song.new(["Under the moonlight",
+>>                             "you see a sight that almost stops your heart"]     
+>> logic = Song.new(["Red light stop, green light go",
+>>                   "my mind goes crazy but I still look hella calm"])
+>> michael_jackson.sing_me_a_song()
+
+exact
+Red light stop, green light go; my mind goes crazy but I still look hella calm; nil
+(Continued from last question)
+>> logic.sing_me_a_song()
+
+!exact
+ok
+The secret celebrity name for this week is: Scarlett Johansson. 
+Type OK to complete!
+
+chapter end
